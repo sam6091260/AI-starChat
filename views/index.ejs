@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 小工具</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body class="body">
+    <img
+      src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+      alt="bg"
+    />
+    <form action="/" method="post">
+      <!-- 可作修改區域 -->
+      <div class="card">
+        <!-- <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/800px-International_Pok%C3%A9mon_logo.svg.png"
+          alt="pokemon_logo"
+          class="card-img"
+        /> -->
+        <h1 class="card-title">猜猜星座個性</h1>
+        <p class="card-text">
+          <% if (description.length) { %> <%= description %> <% } else { %> <%=
+          '???' %> <% } %>
+        </p>
+        <input
+          type="text"
+          name="description"
+          class="card-input"
+          placeholder="填寫星座特色提示文字"
+        />
+        <!-- 可作修改區域 -->
+        <button type="submit" class="card-btn">送出</button>
+      </div>
+    </form>
+  </body>
+</html>
